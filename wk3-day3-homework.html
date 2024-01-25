@@ -66,7 +66,13 @@
     var num = document.getElementById("square-input").value;
     squareNumber(num);
   });
-//  half number code :
+  /* Preview this page on the browser and test the first calculation */
+
+  /* Now it's your turn to do the rest as seen on the preview */
+
+  /* WRITE YOUR HOMEWORK SCRIPTS BELOW HERE */
+
+  //  half number code :
   function halfNumber(num) {
       var halfNumber = num / 2;
       document.getElementById("solution").innerHTML = 'Half of ' + num + ' is ' + halfNumber;
@@ -77,12 +83,27 @@
     halfNumber(num);
   });
 
-  /* Preview this page on the browser and test the first calculation */
-
-  /* Now it's your turn to do the rest as seen on the preview */
-
-  /* WRITE YOUR HOMEWORK SCRIPTS BELOW HERE */
-
+  // percent code
+ function percentNumber(num1,percentage) {
+      var fractionNumber = (num1 * percentage)/100;
+      document.getElementById("solution").innerHTML = num1 + " is " + fractionNumber + " % of " + percentage
+  }
+  var percentButton = document.getElementById("percent-button");
+  percentButton.addEventListener("click", function() {
+    var num1 = document.getElementById("percent1-input").value;
+    var percentage = document.getElementById("percent2-input").value;
+    percentNumber(num1,percentage);
+  });
+  // integer code
+  function integerNumber(num) {
+      var intNumber = Math.round(num)
+      document.getElementById("solution").innerHTML = "The nearest whole number of " + num + " is " + intNumber
+  }
+  var integerButton = document.getElementById("int-button");
+  integerButton.addEventListener("click", function() {
+    var num = document.getElementById("int-input").value;
+    integerNumber(num);
+  });
 
 </script>
 </body>
