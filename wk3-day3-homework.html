@@ -104,6 +104,16 @@
     var num = document.getElementById("int-input").value;
     integerNumber(num);
   });
+   // are of circle code
+   function areaNumber(num) {
+      var radiusNumber = Math.PI * Math.pow(num,2)
+      document.getElementById("solution").innerHTML = "The area of circle with radius " + num + " is " + radiusNumber
+  }
+  var areaButton = document.getElementById("area-button");
+  areaButton.addEventListener("click", function() {
+    var num = document.getElementById("area-input").value;
+    areaNumber(num);
+  });
 
 </script>
 </body>
